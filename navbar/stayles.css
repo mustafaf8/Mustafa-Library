@@ -66,3 +66,44 @@ nav ul li a:hover {
     color: black;
     border-color: black;
 }
+
+
+
+@media (max-width:800px) {
+    .hamburger {
+        width: 25px;
+        position: absolute;
+        left: 20px;
+
+    }
+    nav ul {
+        width: 120px;
+        height:100vh;
+        padding: 20px 20px 20px 0;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: tomato;
+    }
+    nav ul li {
+        margin: 30px 0 0 5px ;
+    }
+    .logo{
+        position: absolute;
+        left: 45%;
+    }
+    .btn {
+        position: absolute;
+        right: 30px;
+    }
+}
+
+@media (min-width:800px){
+    .hamburger {
+        display: none;
+    }
+}
