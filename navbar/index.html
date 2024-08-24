@@ -8,8 +8,9 @@
 </head>
 <body>
     <header>
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
         <img class="logo" src="assets/Ekran görüntüsü 2024-07-29 204420.png" alt="">
-        <nav>
+        <nav class="navegation">
             <ul>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#prodact">PRODACT</a></li>
@@ -18,6 +19,17 @@
             </ul>
         </nav>
         <button class="btn">Login</button>
+        
     </header>
+    <script>
+    document.getElementById("hamburger-btn").onclick = function() { 
+        var nav = document.querySelector(".navegation");
+        if (nav.style.display === "flex") {
+            nav.style.display = "none";
+        } else {
+            nav.style.display = "flex";
+        }
+    }
+    </script>
 </body>
 </html>
