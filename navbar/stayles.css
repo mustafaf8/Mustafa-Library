@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   
+    background-image: url('assets/Ekran\ görüntüsü\ 2024-07-17\ 163415.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(20px);
+}
+nav {
+    width: 60%;
+    padding: 20px;
+}
+nav ul {
+    height:30px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav ul li {
+  
+    color: black;
+    list-style: none;
+}
+nav ul li a{
+    padding: 5px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    transition: 0.3s ease;
+    color: black;
+}
+.logo {
+    width: 50px;
+    height: 45px;
+    border-radius: 50px;
+}
+.btn {
+    width: 60px;
+    height: 30px;
+    padding: 0px;
+    border-radius: 20px;
+    color: white;
+    font-style: italic;
+    border: 5px solid rgb(156, 141, 141);
+    background-color: rgb(126, 107, 104);
+}
+.btn:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+    color: black;
+    border-color: black;
+}
