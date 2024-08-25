@@ -74,7 +74,10 @@ nav ul li a:hover {
         width: 25px;
         position: absolute;
         left: 20px;
-
+        display: block;
+    }
+    .navegation {
+        display: none; /* Başlangıçta navigasyon menüsünü gizle */
     }
     nav ul {
         width: 120px;
@@ -105,5 +108,8 @@ nav ul li a:hover {
 @media (min-width:800px){
     .hamburger {
         display: none;
+    }
+    .navegation {
+        display: flex;
     }
 }
