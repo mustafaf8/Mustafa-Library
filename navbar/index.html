@@ -19,17 +19,28 @@
             </ul>
         </nav>
         <button class="btn">Login</button>
-        
     </header>
+
+    
     <script>
     document.getElementById("hamburger-btn").onclick = function() { 
-        var nav = document.querySelector(".navegation");
-        if (nav.style.display === "flex") {
-            nav.style.display = "none";
+        var navegation = document.querySelector(".navegation");
+        if (navegation.style.display == "flex") {
+            navegation.style.display = "none";
         } else {
-            nav.style.display = "flex";
+            navegation.style.display = "flex";
         }
     }
+     
+     document.addEventListener("click", function(event) {
+     var navegation = document.querySelector(".navegation");
+     var hamburgerBtn = document.getElementById("hamburger-btn");
+
+     if (navegation.style.display === "flex" && !navegation.contains(event.target) && !hamburgerBtn.contains(event.target)) {
+        navegation.style.display = "none";
+     }
+    });
+
     </script>
 </body>
 </html>
